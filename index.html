@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#28190e">
+  <title>Philosophy — The Sanctuary of Wisdom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">THE SANCTUARY OF WISDOM</div>
+      <h1>Philosophy Quiz</h1>
+    </div>
+    <button id="clearAnswers" class="quiet-button" type="button">Clear answers</button>
+  </header>
+
+  <main id="quizPages" aria-label="Philosophy quiz pages">
+    <section class="paper-page question-page" aria-label="Question 1">
+      <img src="pages/page-01.jpg" alt="Question 1: Paano natin maipapakita ang tunay na pangangalaga sa kalikasan, at ano ang ating responsibilidad bilang tao sa pagpapanatili nito para sa susunod na henerasyon?">
+    </section>
+    <section class="paper-page answer-page" aria-label="Answer 1">
+      <img src="pages/page-02.jpg" alt="Answer page for question 1">
+      <label class="answer-label" for="answer1">Your answer to Question 1</label>
+      <textarea id="answer1" data-question="1" class="answer-input" placeholder="Type your essay here…" spellcheck="true"></textarea>
+    </section>
+
+    <section class="paper-page question-page" aria-label="Question 2">
+      <img src="pages/page-03.jpg" alt="Question 2: Bakit mahalagang pangalagaan ang kultura at tradisyon ng mga T'boli, at paano nakatutulong ang mga ito sa pagpapanatili ng kanilang pagkakakilanlan?">
+    </section>
+    <section class="paper-page answer-page" aria-label="Answer 2">
+      <img src="pages/page-04.jpg" alt="Answer page for question 2">
+      <label class="answer-label" for="answer2">Your answer to Question 2</label>
+      <textarea id="answer2" data-question="2" class="answer-input" placeholder="Type your essay here…" spellcheck="true"></textarea>
+    </section>
+
+    <section class="paper-page question-page" aria-label="Question 3">
+      <img src="pages/page-05.jpg" alt="Question 3: Paano natin mapapahalagahan ang mga paniniwala at tradisyon ng mga T'boli habang iginagalang ang pagbabago sa modernong lipunan?">
+    </section>
+    <section class="paper-page answer-page" aria-label="Answer 3">
+      <img src="pages/page-06.jpg" alt="Answer page for question 3">
+      <label class="answer-label" for="answer3">Your answer to Question 3</label>
+      <textarea id="answer3" data-question="3" class="answer-input" placeholder="Type your essay here…" spellcheck="true"></textarea>
+    </section>
+
+    <section class="paper-page question-page" aria-label="Question 4">
+      <img src="pages/page-07.jpg" alt="Question 4: Ano ang ugnayan ng pangangalaga sa kalikasan at paggalang sa kultura ng mga katutubong pamayanan tulad ng mga T'boli?">
+    </section>
+    <section class="paper-page answer-page" aria-label="Answer 4">
+      <img src="pages/page-08.jpg" alt="Answer page for question 4">
+      <label class="answer-label" for="answer4">Your answer to Question 4</label>
+      <textarea id="answer4" data-question="4" class="answer-input" placeholder="Type your essay here…" spellcheck="true"></textarea>
+    </section>
+
+    <section class="paper-page question-page" aria-label="Question 5">
+      <img src="pages/page-09.jpg" alt="Question 5: Paano natin masusukat ang tunay na malasakit ng tao sa kapwa, kalikasan, at kultura sa pamamagitan ng kanyang mga kilos at desisyon?">
+    </section>
+    <section class="paper-page answer-page" aria-label="Answer 5">
+      <img src="pages/page-10.jpg" alt="Answer page for question 5">
+      <label class="answer-label" for="answer5">Your answer to Question 5</label>
+      <textarea id="answer5" data-question="5" class="answer-input" placeholder="Type your essay here…" spellcheck="true"></textarea>
+    </section>
+  </main>
+
+  <footer class="download-panel">
+    <p class="footer-title">Finished answering?</p>
+    <p class="footer-copy">Download a clean PDF with each question followed by your essay.</p>
+    <button id="downloadPdf" class="download-button" type="button">⬇ Download my answers (PDF)</button>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+    <p class="privacy-note">Your answers are saved on this device in this browser. They are not uploaded to a server.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
